@@ -1,0 +1,16 @@
+A[20][30] or A[M][N]
+
+A[12,.....,20][13,....,20]
+           or
+A[Lr,.....,Ur][Lc,....,Uc]
+
+M=(Ur-Lr)+1
+N=(Uc-Lc)+1
+
+A[i][j]
+
+row major:
+Address of A[i][j]= BA + S *[N * (i-Lr) + (j-Lc)]
+
+column major:
+Address of A[i][j]= BA + S *[(i-Lr) + M * (j-Lc)]
